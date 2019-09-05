@@ -4,7 +4,6 @@
 }
 
 .gallery-list__item {
-  margin-right: 10px;
   margin-bottom: 10px;
   padding: 0;
   width: 300px;
@@ -21,6 +20,7 @@
 
 @media (min-width: $mediumDeviceWidth) {
   .gallery-list__item {
+    margin-right: 10px;
     width: 345px;
   }
 
