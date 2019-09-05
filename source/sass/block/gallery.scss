@@ -1,0 +1,27 @@
+.gallery {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.gallery__title {
+  margin: 0;
+  padding-top: 30px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.gallery__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+@media (min-width: $mediumDeviceWidth) {
+  .gallery__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}

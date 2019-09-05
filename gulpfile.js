@@ -84,15 +84,6 @@ gulp.task("webp", function() {
     .pipe(gulp.dest("build/img"));
 });
 
-gulp.task("sprite", function() {
-  return gulp.src("source/img/icon-*.svg")
-    .pipe(svgstore({
-      inlineSvg: true
-    }))
-    .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("build/img"));
-});
-
 gulp.task("html", function() {
   return gulp.src("source/*.html")
     .pipe(posthtml([
@@ -117,7 +108,6 @@ gulp.task("build", gulp.series(
   "css",
   "normalize",
   "compress",
-  "sprite",
   "html",
   "htmlmin"
 ));
@@ -133,7 +123,6 @@ gulp.task("server", function () {
 
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css", "refresh"));
   gulp.watch("source/js/**/*.js", gulp.series("compress", "refresh"));
-  gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "htmlmin", "refresh"));
 });
 
