@@ -20,12 +20,7 @@
 
 @media (min-width: $mediumDeviceWidth) {
   .gallery-list__item {
-    margin-right: 10px;
     width: 345px;
-  }
-
-  .gallery-list__item--no-margin {
-    margin-right: 0;
   }
 
   .gallery-list__item--img {

@@ -1,6 +1,6 @@
 .gallery {
-  padding-left: 10px;
-  padding-right: 10px;
+  // padding-left: 10px;
+  // padding-right: 10px;
 }
 
 .gallery__title {
@@ -17,6 +17,11 @@
 }
 
 @media (min-width: $mediumDeviceWidth) {
+  .gallery {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   .gallery__list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -25,7 +30,12 @@
 }
 
 @media (min-width: $largeDeviceWidth) {
+  .gallery {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
   .gallery__list {
-    justify-content: center;
+    justify-content: space-between;
   }
 }
