@@ -12,29 +12,14 @@
   overflow: hidden;
 }
 
-.gallery-list__item--img {
-  vertical-align: middle;
-  width: 300px;
-  min-height: 230px;
-}
-
 @media (min-width: $mediumDeviceWidth) {
   .gallery-list__item {
-    width: 345px;
-  }
-
-  .gallery-list__item--img {
     width: 345px;
   }
 }
 
 @media (min-width: $largeDeviceWidth) {
   .gallery-list__item {
-    width: 600px;
-  }
-
-  .gallery-list__item--img {
-    width: 600px;
-    min-height: 400px;
+    width: 430px;
   }
 }

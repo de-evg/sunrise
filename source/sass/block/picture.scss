@@ -1,0 +1,24 @@
+.picture__title {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  font-size: 20px;
+}
+
+.picture__img {
+  vertical-align: middle;
+  width: 300px;
+  min-height: 230px;
+}
+
+@media (min-width: $mediumDeviceWidth) {
+  .picture__img {
+    width: 345px;
+  }
+}
+
+@media (min-width: $largeDeviceWidth) {
+  .picture__img {
+    width: 430px;
+    min-height: 340px;
+  }
+}
