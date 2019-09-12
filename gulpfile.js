@@ -100,6 +100,7 @@ gulp.task("build", gulp.series(
   "copy",
   "css",
   "normalize",
+  "js",
   "html",
   "htmlmin"
 ));
